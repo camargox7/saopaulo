@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ídolos - São Paulo FC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .idol-profile { display: flex; flex-direction: column; background: var(--spfc-dark); border-radius: 12px; border: 1px solid var(--spfc-gray); overflow: hidden; margin-bottom: 4rem; box-shadow: 0 10px 30px rgba(0,0,0,0.6); }
+        .idol-header { display: flex; flex-direction: column; background: linear-gradient(135deg, var(--spfc-dark) 0%, var(--spfc-black) 100%); border-bottom: 2px solid var(--spfc-red); }
+        .idol-photo { width: 100%; height: 400px; object-fit: cover; object-position: top; }
+        .idol-name-section { padding: 2rem; }
+        .idol-name-section h2 { font-family: var(--font-heading); font-size: 3.5rem; color: var(--spfc-white); text-transform: uppercaseLine; line-height: 1; }
+        .idol-name-section h2 span { color: var(--spfc-red); display: block; font-size: 1.5rem; letter-spacing: 2px; }
+        .idol-stats { display: flex; gap: 2rem; margin-top: 1.5rem; }
+        .stat-item { background: var(--spfc-black); padding: 10px 20px; border-radius: 8px; border-left: 3px solid var(--spfc-red); }
+        .stat-item h4 { font-size: 0.9rem; color: #888; text-transform: uppercase; }
+        .stat-item p { font-weight: bold; color: var(--spfc-white); font-size: 1.5rem; }
+        .idol-bio { padding: 2.5rem; font-size: 1.15rem; color: #ddd; line-height: 1.8; }
+        @media (min-width: 992px) { .idol-header { flex-direction: row; } .idol-photo { width: 40%; height: auto; } .idol-name-section { width: 60%; display: flex; flex-direction: column; justify-content: center; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/S%C3%A3o_Paulo_Futebol_Clube.png" alt="Logo SPFC">
+            São Paulo FC
+        </div>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <nav>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="mundiais.html">Mundiais</a></li>
+                <li><a href="libertadores.html">Libertadores</a></li>
+                <li><a href="titulos.html">Títulos</a></li>
+                <li><a href="idolos.html">Ídolos</a></li>
+                <li><a href="estadio.html">Estádio</a></li>
+                <li><a href="classicos.html">Clássicos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title fade-in">Hall da <span>Fama Tricolor</span></h1>
+        <p style="text-align:center; color:#ccc; margin-bottom:4rem; font-size:1.2rem;">Mais do que jogadores, mitos e divindades que moldaram a estrutura monumental do São Paulo Futebol Clube.</p>
+
+        <!-- M1TO -->
+        <section class="idol-profile fade-in">
+            <div class="idol-header">
+                <!-- Imagem do usuário -->
+                <img class="idol-photo galeria-usuario" src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Rogerio_ceni_2008.jpg" alt="Rogério Ceni">
+                <div class="idol-name-section">
+                    <h2>Rogério Ceni <span>O M1TO Goleiro-Artilheiro</span></h2>
+                    <div class="idol-stats">
+                        <div class="stat-item"><h4>Jogos</h4><p>1237</p></div>
+                        <div class="stat-item"><h4>Gols</h4><p>131</p></div>
+                        <div class="stat-item"><h4>Grandes Títulos</h4><p>18</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="idol-bio">
+                <p>Nenhum texto conseguirá abranger por inteiro o que Rogério Ceni representa para o São Paulo. Mais do que defesas colossais – como a falta batida por Gerrard no final do Mundial em 2005 –, Rogério marcou impensáveis 131 gols na carreira, tornando-se o maior goleiro artilheiro de toda a história do futebol. Assumiu, para diversas gerações de são-paulinos, a face absoluta, intransigente e invencível do próprio clube em campo.</p>
+                <div class="media-container" style="margin-top:2rem;">
+                    <h4>O Centésimo Gol ou Defesa Histórica (Coloque seu vídeo)</h4>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/placeholder_ceni" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TERROR DO MORUMBI -->
+        <section class="idol-profile fade-in">
+            <div class="idol-header">
+                <img class="idol-photo galeria-usuario" src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Rai_Ribeiro.jpg" alt="Raí">
+                <div class="idol-name-section">
+                    <h2>Raí <span>O Terror do Morumbi</span></h2>
+                    <div class="idol-stats">
+                        <div class="stat-item"><h4>Jogos</h4><p>395</p></div>
+                        <div class="stat-item"><h4>Gols</h4><p>128</p></div>
+                        <div class="stat-item"><h4>Posição</h4><p>Meia-Armador</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="idol-bio">
+                <p>Foi a mente, a alma e a braçadeira do time que apresentou o São Paulo como força mundial. Com classe e extrema frieza, suas atuações na final contra o Barcelona em 1992 definiram a maior página inicial de glórias do tricolor e imacularam sua camisa 10 na memória afetiva do torcedor paulista. Imortal.</p>
+                <div class="media-container" style="margin-top:2rem;">
+                    <h4>O Gol do Mundial de 92 (Coloque seu vídeo)</h4>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/placeholder_rai" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- O MESTRE -->
+        <section class="idol-profile fade-in">
+            <div class="idol-header">
+                <img class="idol-photo galeria-usuario" src="https://images.unsplash.com/photo-1544605553-6258079a0db1?auto=format&fit=crop&q=80&w=800" alt="Telê Santana">
+                <div class="idol-name-section">
+                    <h2>Telê Santana <span>O Mestre Sagrado</span></h2>
+                    <div class="idol-stats">
+                        <div class="stat-item"><h4>Jogos Liderados</h4><p>410</p></div>
+                        <div class="stat-item"><h4>Títulos Mundiais</h4><p>2</p></div>
+                        <div class="stat-item"><h4>Papel</h4><p>Técnico</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="idol-bio">
+                <p>Nenhuma taça gigante tricolor foi concebida sem a semente plantada por Telê Santana. O "Mestre" transformou jogadores medianos em excepcionais, ensinou os rudimentos técnicos incessantes na ponta do estilingue no CCT da Barra Funda e obrigou a equipe a jogar o mais belo e fluido futebol que o Morumbi – e o mundo – já viram nos anos dourados de 1992 e 1993.</p>
+            </div>
+        </section>
+
+        <!-- LUGANO -->
+        <section class="idol-profile fade-in">
+            <div class="idol-header">
+                <!-- Imagem do usuário -->
+                <img class="idol-photo galeria-usuario" src="https://images.unsplash.com/photo-1508344928928-7165b67de128?auto=format&fit=crop&q=80&w=800" alt="Diego Lugano">
+                <div class="idol-name-section">
+                    <h2>Diego Lugano <span>DIOS (O Raça Pura)</span></h2>
+                    <div class="idol-stats">
+                        <div class="stat-item"><h4>Posição</h4><p>Zagueiro</p></div>
+                        <div class="stat-item"><h4>Mundial / Liberta</h4><p>2005</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="idol-bio">
+                <p>O uruguaio que destilava as cores e os dentes pelo São Paulo. Foi o general zagueiro que aterrorizou atacantes, formou as defesas menos vazadas e se transformou em uma entidade absoluta (DIOS) pelos torcedores pela sua raça imensurável.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <button id="backToTop">&#8679;</button>
+
+    <footer>
+        <p>&copy; 2026 Projeto Educacional - <span>São Paulo Futebol Clube</span>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

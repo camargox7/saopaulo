@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estádio do Morumbi - São Paulo FC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .stadium-hero { position: relative; width: 100%; height: 60vh; background: url('https://upload.wikimedia.org/wikipedia/commons/e/ea/Estadio_do_Morumbi.jpg') center/cover; margin-bottom: 4rem; display: flex; align-items: flex-end; border-radius: 12px; overflow: hidden; border: 2px solid var(--spfc-red); box-shadow: 0 10px 30px rgba(218,0,0,0.4); }
+        .stadium-hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(transparent, rgba(12,12,12,0.95)); }
+        .stadium-hero-info { position: relative; z-index: 2; padding: 3rem; width: 100%; }
+        .stadium-hero-info h1 { font-family: var(--font-heading); font-size: 3.5rem; color: var(--spfc-white); text-transform: uppercase; line-height: 1; }
+        .stadium-hero-info h1 span { color: var(--spfc-red); display:block; font-size: 2rem; }
+        .stadium-stats { display: flex; gap: 2rem; padding: 2rem; background: var(--spfc-dark); border-radius: 12px; margin-bottom: 4rem; justify-content: space-around; flex-wrap: wrap; border: 1px solid var(--spfc-gray); }
+        .s-stat { text-align: center; }
+        .s-stat h4 { color: #888; text-transform: uppercase; font-size: 0.9rem; }
+        .s-stat p { color: var(--spfc-red); font-weight: bold; font-size: 2rem; font-family: var(--font-heading); }
+        .stadium-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 3rem; margin-bottom: 3rem; }
+        .stadium-gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid var(--spfc-gray); transition: transform var(--transition-fast); }
+        .stadium-gallery img:hover { transform: scale(1.05); border-color: var(--spfc-red); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/S%C3%A3o_Paulo_Futebol_Clube.png" alt="Logo SPFC">
+            São Paulo FC
+        </div>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <nav>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="mundiais.html">Mundiais</a></li>
+                <li><a href="libertadores.html">Libertadores</a></li>
+                <li><a href="titulos.html">Títulos</a></li>
+                <li><a href="idolos.html">Ídolos</a></li>
+                <li><a href="estadio.html">Estádio</a></li>
+                <li><a href="classicos.html">Clássicos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <div class="stadium-hero fade-in galeria-usuario" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ea/Estadio_do_Morumbi.jpg');">
+            <div class="stadium-hero-info">
+                <h1>O Maior Particular do Brasil <span>Cícero Pompeu de Toledo (MorumBIS)</span></h1>
+            </div>
+        </div>
+
+        <div class="stadium-stats fade-in">
+            <div class="s-stat"><h4>Capacidade Atual</h4><p>66.795</p></div>
+            <div class="s-stat"><h4>Inauguração Maior</h4><p>1970</p></div>
+            <div class="s-stat"><h4>Público Recorde</h4><p>138.032</p></div>
+            <div class="s-stat"><h4>Projeto</h4><p>Vilanova Artigas</p></div>
+        </div>
+
+        <section class="content-section fade-in">
+            <div class="content-info">
+                <h2>O Templo do Futebol</h2>
+                <p>O Morumbi não é apenas um estádio, é um monumento erguido pela força da abnegada torcida e diretores são-paulinos que idealizaram, na década de 50, uma obra que parecia impossível em meio a um terreno lamacento. Hoje, o estádio do Morumbi transborda história, foi palco de dois dos três títulos mundiais garantidos pelo passaporte da Taça Libertadores erguida em sua grama majestosa.</p>
+                <p>Nenhum outro estádio sul-americano abrigou tantas noites de glórias e fumaça vermelha de sinalizadores vindas da "Arquibancada Monumental".</p>
+            </div>
+        </section>
+
+        <h2 style="color: var(--spfc-white); font-family: var(--font-heading); margin-bottom: 1rem; margin-top:2rem;">Galeria do Estádio (Suas Fotos)</h2>
+        <div class="stadium-gallery fade-in">
+            <img class="galeria-usuario" src="https://images.unsplash.com/photo-1551280857-2b9ebf411779?auto=format&fit=crop&q=80&w=800" alt="Vista da Torcida">
+            <img class="galeria-usuario" src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?auto=format&fit=crop&q=80&w=800" alt="Festa Noturna">
+            <img class="galeria-usuario" src="https://images.unsplash.com/photo-1518605368461-1ee12db338cc?auto=format&fit=crop&q=80&w=800" alt="Escudo">
+        </div>
+
+        <div class="media-container fade-in">
+            <h4>Atmosfera Morumbi (Insira seu vídeo de dia de jogo)</h4>
+            <div class="video-wrapper">
+                <!-- Usuário: Insira um iframe aqui -->
+                <iframe src="https://www.youtube.com/embed/placeholder_estadio" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+    </main>
+
+    <button id="backToTop">&#8679;</button>
+
+    <footer>
+        <p>&copy; 2026 Projeto Educacional - <span>São Paulo Futebol Clube</span>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
